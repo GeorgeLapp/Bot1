@@ -414,8 +414,15 @@ public class Bot extends TelegramLongPollingBot  {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-
-
+            photo.setPhoto("https://sun1-20.userapi.com/Cab9nU5MKN2OrJy-9UdKWRxi--olZo2QpX4Dyg/j2lukqy0AbE.jpg");
+            try {
+                execute(photo);
+                Thread.sleep(1300);
+            } catch (TelegramApiException e) {
+                e.printStackTrace();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
 
         }
         if(update.getMessage().getText().equals("Другое")){
